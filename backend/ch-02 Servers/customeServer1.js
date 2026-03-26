@@ -1,25 +1,12 @@
-// import http from "http";
+import http from "http";
 
-// const server = http.createServer((req,res) =>{
-//     res.writeHead(200, {"content-type":"text/html"});
-//     res.end("<h1>hello from node server</h1>")
-// });
+const server = http.createServer((req,res)=>{
+    res.writeHead(200, {"content-type":"text/html"});
+    res.end("<h1>hello from node server</h1>")
+})
 
-// const port = 5001;
+const port = 5001;
 
-// server.listen(port, ()=>{
-//     console.log("server running on port", port)
-// });
-
-// import http from "http";
-
-// const server = http.createServer((req,res)=>{
-//     res.writeHead(200, {"content-type":"text/html"});
-//     res.end("<h1>hello from node server</h1>")
-// })
-
-// const port = 5001;
-
-// server.listen(port, ()=>{
-//     console.log("server running on port", port)
-// })
+server.listen(port, ()=>{
+    console.log("server running on port", port)
+})

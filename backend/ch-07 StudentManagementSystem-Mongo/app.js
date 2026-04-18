@@ -1,0 +1,44 @@
+import express from "express";
+// import HttpError from "./middleware/HttpError.js";
+// import connectDB from "./db/mongoose.js";
+// import studentRoutes from "./routes/studentRoute.js";
+
+const app = express();
+
+app.use(express.json());
+
+//routes
+
+app.use("/student", studentRoutes);
+
+app.get("/", (req, res) => {
+    res.status(200).json("hello from server");
+});
+// undefined routes
+
+app.use((req, res, next) => {
+    next(new HttpError("requested route not found", 404));
+});
+
+app.use((error, req, res, next) => {
+    if (res.headersSent) {
+        next(error);
+    }
+
+    res.status(error.statusCode || 500).json({ message: error.message || "internal server error" });
+});
+
+const port = process.env.PORT || 5000;
+
+async function startServer() {
+    try {
+        await connectDB();
+        app.listen(port, () => {
+            console.log(`Server is running on port ${port}`);
+        });
+    } catch (error) {
+        console.error("Error starting server:", error);
+    }
+}
+
+startServer();

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,50 @@
         table,
         th,
         tr,
-        td{
-         border:1px solid black;  
+        td {
+            border: 1px solid black;
         }
+
+        /* table
+th (table heading cells)
+tr (table rows)
+td (table data cells) */
     </style>
 </head>
+
 <body>
     <table>
         <thead>
-        <tr>
-            <th rowspan="2">Heading</th>
-            <th>Students</th>
-            <th colspan="3">Details</th>
-        </tr>
-        <tr>
-            <th>Id</th>
-            <th>Name</th>
-            <th>Department</th>
-            <th>Roll No</th>
-        </tr>
+            <tr>
+                <th rowspan="2">Heading</th><!--rowspan="2"
+
+Means this cell spans across 2 rows vertically.
+
+So the "Heading" cell occupies space in:
+
+Row 1
+Row 2 -->
+                <th>Students</th>
+                <th colspan="3">Details</th>
+                <!-- Means this heading spans across 3 columns horizontally.
+
+So "Details" covers:
+
+Name
+Department
+Roll No -->
+            </tr>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Roll No</th>
+            </tr>
         </thead>
         <tbody>
             <tr>
                 <td rowspan="4">Student List</td>
+                <!-- This cell spans 4 rows vertically. -->
                 <td>1</td>
                 <td>John Doe</td>
                 <td>Computer Science</td>
@@ -55,7 +77,32 @@
                 <td>104</td>
             </tr>
         </tbody>
-    </table>    
+    </table>
 
 </body>
+
 </html>
+<!-- 
+rowspan
+
+Merges cells vertically.
+
+Example:
+
+rowspan="4"
+
+Means:
+
+👉 occupy 4 rows.
+
+colspan
+
+Merges cells horizontally.
+
+Example:
+
+colspan="3"
+
+Means:
+
+👉 occupy 3 columns. -->

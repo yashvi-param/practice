@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form action="">
+        <label for="input">input label</label>
+        <!-- Creates a form for user input.action="" means the form data will be submitted to the current page. -->
+        <input type="text" placeholder="input" />
+        <!-- Displays text describing an input field.for="input" should match an input's id attribute (currently missing). -->
+        <input type="color" />
+        <!-- Lets the user select a color.🎨 Example: Red, Blue, Green -->
+        <input type="password" />
+        <!-- Used for passwords.Characters appear as dots or asterisks. -->
+        <input type="range" />
+        <!-- Creates a slider control.Example:|----●----| -->
+        <input type="checkbox" />
+        <!-- Allows selecting or deselecting an option.Example:☑ Accept Terms -->
+        <input type="email"/>
+        <!-- Accepts email addresses.Browser validates email format.Example:abc@gmail.com -->
+        <input type="radio"/>
+        <!-- Creates a radio button.Usually used when only one option can be selected. -->
+        <input type="submit" />
+        <!-- Sends form data to the server. -->
+        <input type="File" />
+        <!-- Allows users to upload files. -->
+        <input type="reset" />
+        <!-- Clears all form inputs and resets them to default values. -->
+        <input type="number" />
+        <!-- Accepts only numeric values. -->
+        <input type="Tel" />
+        <!-- Used for phone numbers. -->
+        <input type="Date" />
+        <!-- Opens a date picker. -->
+        <input type="Time">
+        <!-- Opens a time picker. -->
+
+        <!-- radio -->
+
+        <label for="">Result</label>
+        <!-- Displays the text "Result". -->
+        <input type="radio" name="result" value="true">
+        <!-- Option value is "true". -->
+        <input type="radio" name="result" value="false">
+        <!-- Option value is "false". -->
+        
+
+        <select name="City" id="">
+            <!-- Creates a dropdown list. -->
+            <option value="Mumbai">Mumbai</option>
+            <!-- Dropdown option: Mumbai -->
+            <option value="ahemadabad" selected>ahemadabad</option>
+            <!-- Ahmedabad is selected by default because of selected. -->
+            <option value="Surat">Surat</option>
+            <!-- Dropdown option: Surat -->
+
+        </select>
+
+       <textarea name="" id="" cols="30" rows="10"></textarea>
+        <!-- Creates a multi-line text box.cols="30" → width (approximately 30 characters).rows="10" → height (10 lines). -->
+    </form>
+</body>
+</html>

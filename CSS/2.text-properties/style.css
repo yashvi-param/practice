@@ -1,0 +1,11 @@
+.text{
+     text-align: center;/* this is to give our text in center */
+     font-size: 50px;/* this is use for text size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;/* this is use for to define or change the text-style */
+    text-transform: capitalize;/* It makes the first letter of every word uppercase */
+     color: brown; /*this make for color of our font */
+     font-style: italic; /*this make the font style which we define */
+    list-style: none;/* 👉 This is used for <ul> or <ol> lists only 👉 Not useful for <p> tag */
+    text-decoration: none; /* Removes underline or decoration */
+    font-weight: 500;/* Controls thickness of text */
+}

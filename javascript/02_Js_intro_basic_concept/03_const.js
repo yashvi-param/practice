@@ -77,4 +77,4 @@ person.name = "charlie";
 
 // This changes the name property of the object.
 
-console.log(person.name);ch
+console.log(person.name);

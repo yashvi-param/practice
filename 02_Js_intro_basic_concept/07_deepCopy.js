@@ -17,4 +17,6 @@ console.log("num2 value", num2);
 num2 = 500;
 // Now we change the value of num2 from 100 to 500.
 console.log("num1 value", num1);
+// This prints num1.
 console.log("num2 value", num2);
+// This prints num2.

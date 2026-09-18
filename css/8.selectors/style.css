@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* .div{
+    color: brown; 
+} */
+  /* this make the all text color of brown */
+
+/* div p{
+    color: blueviolet;
+} */
+     /* this make the blueviolet color */
+
+/* div,p{
+    color: cadetblue;
+} */
+ /* this make the p tag of cadetblue */
+
+ p::first-letter{
+    font-size: 50px;
+    color: chartreuse;
+ }
+ /* this is the first letter make this color and size also inrease */
+ /* ::first-letter selects the first letter of every paragraph.
+
+Makes it 50px.
+
+Changes color to chartreuse */
+
+ .list::first-line{
+    color: blue;
+    font-size: 60px;
+ }
+ /* Selects only the first line of the list.
+
+Makes it blue.
+
+Font size becomes 60px. */
+
+ .list li:first-child{
+    font-family: cursive;
+ }
+
+ /* Selects the first li.
+
+Changes its font to cursive. */
+
+ .list li:last-child{
+    font-style: italic;
+ }
+/* Selects the last li.
+
+Makes it italic. */
+ .list li:nth-child(3){
+    color: burlywood;
+ }
+ /* Selects the 3rd list item.
+
+Changes its color to burlywood. */

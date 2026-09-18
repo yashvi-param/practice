@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+
+    <style>
+        table,
+        th,
+        tr,
+        td{
+         border:2px black;
+         border-style:solid;   
+        }
+    </style>
+
+    <!-- Applies a 2px solid black border to the table, header cells (th), rows (tr), and data cells (td). Every part of the table gets a visible border. -->
+</head>
+<body>
+    <table>
+    <caption>
+        Student Information
+    </caption>
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Full Name</th>
+            <th>Age</th>
+            <th>Class</th>
+            <th>Grade</th>
+        </tr>
+    </thead>
+
+    <!-- <thead> groups the header row. Inside it, <tr> is one row, and each <th> is a bold header cell — ID, Full Name, Age, Class, Grade. -->
+    <tbody><!--  Groups all the data rows of the table. -->
+        <tr>
+            <td>1</td>
+            <td>John Doe</td>
+            <td>20</td>
+            <td>CS101</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Jane Smith</td>
+            <td>22</td>
+            <td>CS102</td>
+            <td>B</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Emily Johnson</td>
+            <td>19</td>
+            <td>CS101</td>
+            <td>A</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Michael Brown</td>
+            <td>21</td>
+            <td>CS102</td>
+            <td>C</td>
+        </tr>
+    </tbody>
+    </table>
+</body>
+</html>
+
+<!-- Closes the table, the body, and the HTML document respectively. -->

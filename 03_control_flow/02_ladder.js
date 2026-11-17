@@ -29,3 +29,17 @@
 // } else{
 //     console.log("Excessive Electricity Usage")
 // }
+
+let amount = 7500;
+
+if(amount >= 0 && amount <= 999){
+    console.log("No Discount");
+}else if(amount >= 1000 && amount <= 2999){
+    console.log("5% Discount");
+}else if(amount >= 3000 && amount <= 4999){
+    console.log("10% Discount");
+}else if(amount >= 5000 && amount <= 9999){
+    console.log("20% Discount")
+}else {
+    console.log("30% Discount")
+}

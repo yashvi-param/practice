@@ -30,16 +30,33 @@
 //     console.log("Excessive Electricity Usage")
 // }
 
-let amount = 7500;
+// let amount = 7500;
 
-if(amount >= 0 && amount <= 999){
-    console.log("No Discount");
-}else if(amount >= 1000 && amount <= 2999){
-    console.log("5% Discount");
-}else if(amount >= 3000 && amount <= 4999){
-    console.log("10% Discount");
-}else if(amount >= 5000 && amount <= 9999){
-    console.log("20% Discount")
-}else {
-    console.log("30% Discount")
+// if(amount >= 0 && amount <= 999){
+//     console.log("No Discount");
+// }else if(amount >= 1000 && amount <= 2999){
+//     console.log("5% Discount");
+// }else if(amount >= 3000 && amount <= 4999){
+//     console.log("10% Discount");
+// }else if(amount >= 5000 && amount <= 9999){
+//     console.log("20% Discount")
+// }else {
+//     console.log("30% Discount")
+// }
+
+
+let age = 22;
+
+if(age >= 0 && age <= 5){
+    console.log("Baby");
+}else if(age >= 6 && age <= 12){
+    console.log("Child");
+}else if(age >= 13 && age <= 19){
+    console.log("Teenager");
+}else if(age >= 20 && age <= 35){
+    console.log("Young Adult");
+}else if(age >= 36 && age <= 59){
+    console.log("Adult");
+}else if(age >= 60 && age <= 100){
+    console.log("Senior Citizen")
 }

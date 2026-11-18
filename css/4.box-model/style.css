@@ -1,0 +1,22 @@
+.box{
+    background-color: red;
+}
+/* this make the background colour */
+.box1{
+    border: 5px dotted orange;
+    margin: 50px;
+    padding: 50px;
+    background-color: yellow;
+    height: 500px;
+    width: 500px;
+}
+/* in this we make border dotted and background color margin add and padding and also add height and width of box */
+.box2{
+    background-color: rgb(33, 205, 33);
+    margin: 30px;
+    padding: 30px;
+    height: 100px;
+    width: 100px;
+}
+
+/* this box is the in box 2 this box in the text  */
